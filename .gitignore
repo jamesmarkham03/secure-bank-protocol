@@ -1,0 +1,8 @@
+# Created at runtime: accounts (plain-text passwords) and the audit log
+users.txt
+audit_log.txt
+
+.env
+.env.*
+CLAUDE.local.md
+__pycache__/
