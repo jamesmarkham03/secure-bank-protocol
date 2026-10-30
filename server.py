@@ -239,7 +239,7 @@ def handle_client(conn, addr):
                         log_action(current_user, f"WITHDRAW {amount}")
                         send_secure(conn, ENC_KEY, MAC_KEY, f"[{current_user}] Withdrew ${amount}! New balance: ${new_balance}")
                     else:
-                        send_secure(conn, ENC_KEY, MAC_KEY, "[{current_user}] Broke! Not enough money!")
+                        send_secure(conn, ENC_KEY, MAC_KEY, f"[{current_user}] Insufficient funds.")
 
             elif cmd == "CHK_BAL":
                 if not current_user:
