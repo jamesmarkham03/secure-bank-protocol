@@ -1,6 +1,6 @@
 # Secure Bank Protocol
 
-A multithreaded bank server and ATM client in Python that authenticate each other, derive session keys, and encrypt and authenticate every message. Course project for **COE817 Network Security** (Toronto Metropolitan University, Winter 2026).
+A multithreaded bank server and ATM client in Python that authenticate each other, derive session keys, and encrypt and authenticate every message. Team course project for **COE817 Network Security** (Toronto Metropolitan University, Winter 2026). The weaknesses review below is my own, written after the course.
 
 **Stack:** Python sockets and threads, [PyCryptodome](https://www.pycryptodome.org/) (AES-EAX, HMAC-SHA256), SHA-256 key derivation.
 
@@ -27,7 +27,7 @@ Server: [alice] Balance: $70
 `users.txt` (accounts) and `audit_log.txt` are created next to the server at runtime and are gitignored.
 
 ## Known weaknesses and how I'd fix them
-This is coursework, and reviewing it with fresh eyes, these are the real problems:
+This was coursework. Reviewing it with fresh eyes, these are the real problems:
 
 | Weakness | Why it matters | Fix |
 |---|---|---|
